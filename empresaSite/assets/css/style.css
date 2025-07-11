@@ -34,6 +34,7 @@ body{
     display: flex;
     gap: 40px;
     list-style: none;
+    transition: all 0.4s;
 }
 
 .itensDeNavegacao > .itemLista > a{
@@ -112,9 +113,18 @@ body{
 
 .tituloprincipal>h1{
     margin-bottom: 20px;
+    font-size: 40px;
+    width: 600px;
 }
+
+.destaque{
+    font-weight: bolder;
+}
+
 .tituloprincipal>p{
     margin-bottom: 60px;
+    font-size: 18px;
+
 }
 
 .botaoContatoDois{
@@ -125,12 +135,16 @@ body{
     font-size: 25px;
     color: #ffff;
     font-weight: bold;
+    border:  none;
+
+    transition: all 0.5s;
 }
 
 .botaoContatoDois:hover{
-    background-color: #012646;
-    color: #cfcfcf;
-    transition: 0.4s;
+    /* background-color: #012646; */
+    background-color: #fff;
+    /* color: #cfcfcf; */
+    color: #012646;
     cursor: pointer;
 }
 
@@ -170,6 +184,7 @@ body{
 .sobrenoisparagrafo>p{
     margin-bottom: 30px;
 }
+
 .imgsobrenois{
     width: 504px ;
     height:510px;
