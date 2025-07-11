@@ -17,10 +17,10 @@ contatoform.addEventListener("submit" , (e) => {
     const text =  `
     Novo contato pelo site:
 
-    Nome:${name}
-    Telefone:${phone}
-    Email:${email}
-    Assunto:${email}
+     Nome:${name}
+     Telefone:${phone}
+     Email:${email}
+     Assunto:${email}
     `
     const url = `https://wa.me/559896028439?text=${encodeURIComponent(text)}`;
 
