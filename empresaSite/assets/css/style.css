@@ -65,6 +65,7 @@ body{
 .botaoContato:hover {
     background-color:#cbcbcb;
     cursor: pointer; 
+    /* transition: 0.5s; */
 }
 
 /* titulo principal da pagina e background */
@@ -117,9 +118,6 @@ body{
     width: 600px;
 }
 
-.destaque{
-    font-weight: bolder;
-}
 
 .tituloprincipal>p{
     margin-bottom: 60px;
@@ -137,7 +135,6 @@ body{
     font-weight: bold;
     border:  none;
 
-    transition: all 0.5s;
 }
 
 .botaoContatoDois:hover{
@@ -146,6 +143,7 @@ body{
     /* color: #cfcfcf; */
     color: #012646;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 /* seção de sobre Nois */
@@ -304,10 +302,12 @@ body{
 label{
     font-size: 20px;
     color: #ffff;
+    margin-bottom: 12px;
 }
 
 .imgContato{
     width: 566px;
+    /* flex: 1; */
     height: 636px;
    background-size: cover;
    background-position: center;
@@ -319,6 +319,7 @@ label{
     flex-direction: column;
     flex-wrap: wrap;
     width: 566px;
+    /* flex: 1; */
     height: 636px;
     justify-content: center;
 }
@@ -328,6 +329,7 @@ label{
     height: 40px;
     border-radius: 8px;
     border: none;
+    margin-bottom: 2rem;
 }
 
 .emailContato {
@@ -337,6 +339,10 @@ label{
 
 .input-control {
     flex: 1;
+}
+
+.input-control input{
+    margin-top: 10px;
 }
 
 /* .imputNome{
@@ -371,6 +377,7 @@ label{
     font-size: 25px;
 
 } */
+
 .imputtextarea{
     margin-bottom: 25px;
     width:566px;
@@ -379,6 +386,7 @@ label{
     border: none;
     outline: none;
     font-size: 18px;
+    resize: none;
     
 }
 
@@ -406,14 +414,15 @@ label{
 
 .buutonForm:hover {
     color: #fff;
-    background-color: #002c53;
+    background-color: #335675;
+    border:solid 2px #fff;
 }
 
-.separandomainfooter{
+/* .separandomainfooter{
     width: 100%;
     height: 64px;
     background-color: #ffffff;
-}
+} */
 
 /* footer */
 .containerfooterum{
