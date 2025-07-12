@@ -20,7 +20,7 @@ contatoform.addEventListener("submit" , (e) => {
      Nome:${name}
      Telefone:${phone}
      Email:${email}
-     Assunto:${email}
+     Assunto:${subject}
     `
     const url = `https://wa.me/559896028439?text=${encodeURIComponent(text)}`;
 

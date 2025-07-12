@@ -202,7 +202,7 @@ body{
     border-radius: 148px;
     transform: rotate(-38deg);
     margin-top: -650px;
-    left: 670px;
+    left: 720px;
 }
 
 /* misão visão e valores */
@@ -233,11 +233,12 @@ body{
 /* serviços */
 .containerServiços{
     position: relative;
-    background-color: #ffff;
+    background-color: #fff;
     margin: 0 auto;
+    padding-block: 3rem;
     margin-top: -350px;
     border-radius: 32px;
-    width: 1441px;
+    width: 95%;
     height: 900px;
     display: flex;
     flex-wrap: wrap;
