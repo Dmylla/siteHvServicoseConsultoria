@@ -302,8 +302,8 @@ body{
 }
 
 label{
-font-size: 20px;
-color: #ffff;
+    font-size: 20px;
+    color: #ffff;
 }
 
 .imgContato{
@@ -323,7 +323,23 @@ color: #ffff;
     justify-content: center;
 }
 
-.imputNome{
+.input-form {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+}
+
+.emailContato {
+    display: flex;
+    gap: 12px;    
+}
+
+.input-control {
+    flex: 1;
+}
+
+/* .imputNome{
     margin-bottom: 25px;
     width:566px;
     height: 62px;
@@ -331,8 +347,9 @@ color: #ffff;
     border: none;
     outline: none;
     font-size: 25px;
-}
-.imputemail{
+} */
+
+/* .imputemail{
     margin-bottom: 25px;
     width: 270px;
     height: 62px;
@@ -342,8 +359,9 @@ color: #ffff;
     font-size: 25px;
     margin-bottom: 5px;
 
-}
-.imputnumber{
+} */
+
+/* .imputnumber{
     margin-bottom: 25px;
     width: 270px;
     height: 62px;
@@ -352,7 +370,7 @@ color: #ffff;
     outline: none;
     font-size: 25px;
 
-}
+} */
 .imputtextarea{
     margin-bottom: 25px;
     width:566px;
@@ -364,14 +382,14 @@ color: #ffff;
     
 }
 
-.emailContato{
+/* .emailContato{
     display: flex;
     gap: 25px;
     width: 566px;
     height: 62px;
     margin-bottom: 50px;
 
-}
+} */
 
 .buutonForm {
     margin-top: 30px;
@@ -381,6 +399,14 @@ color: #ffff;
     font-size: 25px;
     color: #002c53;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.buutonForm:hover {
+    color: #fff;
+    background-color: #002c53;
 }
 
 .separandomainfooter{
