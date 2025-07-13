@@ -24,9 +24,10 @@ body{
     background-color: #002c53;
     width: 100%;    
     height: 64px;
-    padding: 20px;
+    align-items: center;
     position: fixed;
     z-index: 1000;
+    padding-inline: 5rem;
 }
 
 /* itens da lista não ordenada de dentro do nav bar */
@@ -65,7 +66,6 @@ body{
 .botaoContato:hover {
     background-color:#cbcbcb;
     cursor: pointer; 
-    /* transition: 0.5s; */
 }
 
 /* titulo principal da pagina e background */
@@ -134,6 +134,7 @@ body{
     color: #ffff;
     font-weight: bold;
     border:  none;
+    border: solid 1px #002c53;
 
 }
 
@@ -212,45 +213,38 @@ body{
     margin-top: 110px;
 }
 
-    .cardes {
-        display: flex;
-        flex: 1 ;
-        height: 200px;
-        background: #fff;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 20px;
-        margin-top: 130px;
-        border-radius: 8px;
-    }
-
-/* .cardes{
+.cardes {
     display: flex;
+    flex: 1 ;
+    height: 200px;
+    background: #fff;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 10px;
-    margin-top: 100px;
-    background-color: #ffff;
-    width: 400px;
-    height: 260px;
-    padding: 30px;
-} */
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 130px;
+    border-radius: 8px;
+}
 
 /* serviços */
 .containerServiços{
     position: relative;
-    background-color: #fff;
+
+    background-color: #ffffff;
+    transition: all ;
+
     margin: 0 auto;
     padding-block: 3rem;
     margin-top: -350px;
+
     border-radius: 32px;
-    width: 95%;
-    height: 900px;
+    width: 98%;
+    height: auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+
     box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1),
             /* cima + direita */
             4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -280,14 +274,106 @@ body{
 }
 
 .tituloNossosServicos {
-    position: absolute;
     top: 40px;
     width: 100%;
     height: 60px;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
 }
+
+.more-services {
+    display: none;
+    /* transition: opacity 0.4s ease; */
+    margin-top: 9rem;
+}
+
+.botaoContatoDois.serviços-button{
+    margin-top: 12rem;
+}
+
+/* como-funciona-section */
+
+.como-funciona-section {
+    width: 100%;
+    height: 700px;  
+}
+
+.como-funciona-contente {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 22px   ;
+
+    width: 99%;
+    margin: 0 auto;
+}
+
+.como-funciona-section>h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.como-funciona-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    
+    width: 450px;
+    height: 250px;
+    padding: 20px 22px ;
+    border-radius: 12px;
+    
+    background-color: #335675;
+    color: #fff;
+}
+
+.como-funciona-card > h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    outline: solid 10px #fff;
+
+    background-color: #31827c;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 70px;
+
+    position: relative;
+    top: -82%;
+    left: 33%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona-section > .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #31827c;
+    font-size: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -100px;
+    left: 60px;
+    outline: solid 4px #fff;
+}
+
 
 /* contato */
 .formularioContato{
