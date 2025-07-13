@@ -104,7 +104,6 @@ gsap.fromTo(".imgsobrenois", {
     }
 })
 
-// teste
 
     gsap.fromTo(".cardes" , {
         x: -2000,
@@ -120,3 +119,34 @@ gsap.fromTo(".imgsobrenois", {
         }
     })
 
+
+    // serviçoes section
+
+    gsap.fromTo(".tituloNossosServicos" , {
+        x:-1000,
+        opacity:0
+    } , {
+        x:0,
+        opacity:1,
+        duration:2,
+        scrollTrigger:{
+            trigger:".tituloNossosServicos",
+            start:"top 90%",
+            toggleActions:"play none none none"
+        }
+    })
+
+
+    gsap.fromTo(".itenServiço" , {
+        y:500,
+        opacity:0
+    },{
+        y:0,
+        duration:2,
+        opacity:1,
+        scrollTrigger:{
+            trigger:".itenServiço",
+            start:"top 150%",
+            toggleActions:"play none none none"
+        }
+    })
