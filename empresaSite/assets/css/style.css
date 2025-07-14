@@ -1,9 +1,12 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* geral */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Helvetica, sans-serif;
 }
 
 html{
@@ -19,17 +22,20 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #002c53;
-    width: 100%;
+    width: 100%;    
     height: 64px;
-    padding: 20px;
+    align-items: center;
     position: fixed;
     z-index: 1000;
+    padding-inline: 5rem;
 }
+
 /* itens da lista não ordenada de dentro do nav bar */
 .itensDeNavegacao{
     display: flex;
     gap: 40px;
     list-style: none;
+    transition: all 0.4s;
 }
 
 .itensDeNavegacao > .itemLista > a{
@@ -47,15 +53,19 @@ body{
     width: 180px;
     height: 35px;
     margin-top: -5px;
+
     color: #002c53;
     font-weight: bold;
+    font-size: 14px;
     border-radius: 8px;
+    border: none;
+
+    transition: 0.5s;
 }
 
 .botaoContato:hover {
     background-color:#cbcbcb;
-    transition: 0.5s;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 /* titulo principal da pagina e background */
@@ -67,6 +77,17 @@ body{
     background-position: center;
     position: relative;
     z-index:1;
+
+}
+
+.backgroundPrincipal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #111111, #ffffff00);
 }
 
 .backgroundPrincipalblack{
@@ -93,9 +114,15 @@ body{
 
 .tituloprincipal>h1{
     margin-bottom: 20px;
+    font-size: 40px;
+    width: 600px;
 }
+
+
 .tituloprincipal>p{
     margin-bottom: 60px;
+    font-size: 18px;
+
 }
 
 .botaoContatoDois{
@@ -106,13 +133,16 @@ body{
     font-size: 25px;
     color: #ffff;
     font-weight: bold;
+    border:  none;
+    border: solid 1px #002c53;
+
 }
 
 .botaoContatoDois:hover{
-    background-color: #012646;
-    color: #cfcfcf;
-    transition: 0.4s;
+    background-color: #fff;
+    color: #012646;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 /* seção de sobre Nois */
@@ -137,9 +167,10 @@ body{
 .sobrenoisFoto{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 190px;
+
 }
+
 .sobrenoisparagrafo{
     width: 485px;
     height: 420px;
@@ -151,6 +182,7 @@ body{
 .sobrenoisparagrafo>p{
     margin-bottom: 30px;
 }
+
 .imgsobrenois{
     width: 504px ;
     height:510px;
@@ -161,18 +193,19 @@ body{
     position: absolute;
     z-index: -1;
     background-color: #31827c;
-    width: 1058.40px;
+    width: 1058.40px;   
     height: 521.53px;
     border-radius: 148px;
     transform: rotate(-38deg);
     margin-top: -650px;
-    left: 670px;
+    left: 720px;
 }
 
 /* misão visão e valores */
-.containermisaovisaovalores{
+.containermisaovisaovalores {
     display: flex;
     justify-content: center;
+    padding-inline: 50px;
     gap: 85px;
     background-color: #335675;
     width: 100%;
@@ -180,33 +213,38 @@ body{
     margin-top: 110px;
 }
 
-.cardes{
+.cardes {
     display: flex;
+    flex: 1 ;
+    height: 200px;
+    background: #fff;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 10px;
-    margin-top: 100px;
-    background-color: #ffff;
-    width: 400px;
-    height: 260px;
-    padding: 30px;
-
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 130px;
+    border-radius: 8px;
 }
 
 /* serviços */
 .containerServiços{
     position: relative;
-    background-color: #ffff;
+
+    background-color: #ffffff;
+    transition: all ;
+
     margin: 0 auto;
+    padding-block: 3rem;
     margin-top: -350px;
+
     border-radius: 32px;
-    width: 1441px;
-    height: 900px;
+    width: 98%;
+    height: auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+
     box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1),
             /* cima + direita */
             4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -236,14 +274,106 @@ body{
 }
 
 .tituloNossosServicos {
-    position: absolute;
     top: 40px;
     width: 100%;
     height: 60px;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
 }
+
+.more-services {
+    display: none;
+    /* transition: opacity 0.4s ease; */
+    margin-top: 9rem;
+}
+
+.botaoContatoDois.serviços-button{
+    margin-top: 12rem;
+}
+
+/* como-funciona-section */
+
+.como-funciona-section {
+    width: 100%;
+    height: 700px;  
+}
+
+.como-funciona-contente {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 22px   ;
+
+    width: 99%;
+    margin: 0 auto;
+}
+
+.como-funciona-section>h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.como-funciona-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    
+    width: 450px;
+    height: 250px;
+    padding: 20px 22px ;
+    border-radius: 12px;
+    
+    background-color: #335675;
+    color: #fff;
+}
+
+.como-funciona-card > h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    outline: solid 10px #fff;
+
+    background-color: #31827c;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 70px;
+
+    position: relative;
+    top: -82%;
+    left: 33%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona-section > .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #31827c;
+    font-size: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -100px;
+    left: 60px;
+    outline: solid 4px #fff;
+}
+
 
 /* contato */
 .formularioContato{
@@ -265,12 +395,14 @@ body{
 }
 
 label{
-font-size: 20px;
-color: #ffff;
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 12px;
 }
 
 .imgContato{
     width: 566px;
+    /* flex: 1; */
     height: 636px;
    background-size: cover;
    background-position: center;
@@ -282,11 +414,36 @@ color: #ffff;
     flex-direction: column;
     flex-wrap: wrap;
     width: 566px;
+    /* flex: 1; */
     height: 636px;
     justify-content: center;
 }
 
-.imputNome{
+.input-form {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2rem;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+}
+
+.emailContato {
+    display: flex;
+    gap: 12px;    
+}
+
+.input-control {
+    flex: 1;
+}
+
+.input-control input{
+    margin-top: 10px;
+}
+
+/* .imputNome{
     margin-bottom: 25px;
     width:566px;
     height: 62px;
@@ -294,8 +451,9 @@ color: #ffff;
     border: none;
     outline: none;
     font-size: 25px;
-}
-.imputemail{
+} */
+
+/* .imputemail{
     margin-bottom: 25px;
     width: 270px;
     height: 62px;
@@ -305,8 +463,9 @@ color: #ffff;
     font-size: 25px;
     margin-bottom: 5px;
 
-}
-.imputnumber{
+} */
+
+/* .imputnumber{
     margin-bottom: 25px;
     width: 270px;
     height: 62px;
@@ -315,7 +474,8 @@ color: #ffff;
     outline: none;
     font-size: 25px;
 
-}
+} */
+
 .imputtextarea{
     margin-bottom: 25px;
     width:566px;
@@ -324,17 +484,19 @@ color: #ffff;
     border: none;
     outline: none;
     font-size: 18px;
+    resize: none;
+    padding: 10px ;
     
 }
 
-.emailContato{
+/* .emailContato{
     display: flex;
     gap: 25px;
     width: 566px;
     height: 62px;
     margin-bottom: 50px;
 
-}
+} */
 
 .buutonForm {
     margin-top: 30px;
@@ -344,13 +506,22 @@ color: #ffff;
     font-size: 25px;
     color: #002c53;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
 }
 
-.separandomainfooter{
+.buutonForm:hover {
+    color: #fff;
+    background-color: #335675;
+    border:solid 2px #fff;
+}
+
+/* .separandomainfooter{
     width: 100%;
     height: 64px;
     background-color: #ffffff;
-}
+} */
 
 /* footer */
 .containerfooterum{
@@ -427,3 +598,9 @@ color: #ffff;
 }
 
 
+
+@media (max-width:700px) {
+    .designerformadois {
+        display: none;
+    }
+}
