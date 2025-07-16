@@ -35,6 +35,8 @@ const buttonMoreServices = document.querySelector(".serviços-button")
 console.log(buttonMoreServices)
 buttonMoreServices.addEventListener("click" , () => {
 
+    buttonMoreServices.setAttribute("disabled" ,"true")
+
     gsap.fromTo(".more-services",{
         y:300,
         opacity:0,
@@ -45,13 +47,27 @@ buttonMoreServices.addEventListener("click" , () => {
         duration:1  ,
         display:"flex"
     })
-
-
-    // console.log
-    // const divMoreServices = document.querySelector(".more-services")
-    // divMoreServices.style.display = "flex"
-    // divMoreServices.style.opacity = "1"
-    // console.log(divMoreServices)
 })
 
+
+// slider
+
+ document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 800,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+});
 
