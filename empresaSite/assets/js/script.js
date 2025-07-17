@@ -58,6 +58,10 @@ buttonMoreServices.addEventListener("click" , () => {
     spaceBetween: 30,
     loop: true,
     speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
 
     pagination: {
       el: ".swiper-pagination",
