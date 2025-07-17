@@ -8,6 +8,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/empresaSite/assets/css/style.css">
     <link rel="icon" href="/empresaSite/assets/img/logoEmpresaHV.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>HVseviçoseConsultoria</title>
 </head>
@@ -20,8 +21,9 @@
 
         <ul class="itensDeNavegacao">
             <li class="itemLista"><a href="#sobreNois">Sobre</a></li>
-            <li class="itemLista"><a href="#NossosServicos">Serviços</a></li>
             <li class="itemLista"><a href="#misaoVisaoValores">Missão</a></li>
+            <li class="itemLista"><a href="#NossosServicos">Serviços</a></li>
+            
 
         </ul>
 
@@ -39,7 +41,7 @@
             <div class="backgroundPrincipalblack"></div>
 
             <div class="tituloprincipal">
-                <h1 class="hero-title"> <span class="destaque">HV Serviços e Consultoria</span> – Consultoria administrativa e Licitações Públicas</h1>
+                <h1 class="hero-title"> <span class="destaque">HV Serviços e Consultoria</span></h1>
         
                  <p class="description-hero">Conectando sua empresa às oportunidades do setor público. Fale conosco e descubra como podemos lhe ajudar a crescer</p>
             
@@ -54,7 +56,7 @@
 
             <div class="designerformaum"></div>
 
-            <h1 class="tituloSobrenois">Sobre Nós</h1>
+            <h2 class="tituloSobrenois">Sobre Nós</h2>
 
             <div class="sobrenoisFoto">
 
@@ -63,17 +65,13 @@
                     Brasil. Com ampla experiência, oferecemos serviços práticos, seguros e eficientes que ajudam no crescimento e na
                     organização dos nossos clientes. Atuamos com levantamento patrimonial, certificação digital, consultoria em licitações,
                     digitalização de documentos, monitoramento de processos e assessoria empresarial.</p>
-
-                    <p>Nossa equipe é formada por profissionais experientes e comprometidos, que trabalham com ética e agilidade. Nosso
-                    objetivo é oferecer suporte completo e personalizado, sendo um parceiro estratégico para o sucesso de cada empresa.</p>
                 </div>
 
                 <img src="/empresaSite/assets/img/fotoSobrenois.jpg" alt="fotos de um trabalho de licitação" class="imgsobrenois">
 
             </div>
 
-
-            <div class="designerformadois"></div>
+            <div class="designerformadois" ></div>
 
 
         </section>
@@ -100,7 +98,7 @@
         <!-- Serviços -->
         <section class="containerServiços" id="NossosServicos">
             
-            <h1 class="tituloNossosServicos">Nossos Serviços</h1>
+            <h2 class="tituloNossosServicos">Nossos Serviços</h2>
 
             <div class="itenServiço">
                 <i class="fa-solid fa-building"></i>
@@ -154,11 +152,90 @@
 
         </section>
 
-        <section class="como-funciona-section">
+        <section class="como-funciona-section" id="Como-funciona">
+        
             <h2>Como funciona </h2>
-            <div class="como-funciona-contente">
+
+                 <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <div class="como-funciona-contente">
+                    <div class="card-control">
+                    <div class="como-funciona-card card-1">
+                        <h3>Cadastro e Entendimento</h3>
+                        <p>Nesta etapa inicial, realizamos o cadastro completo da sua empresa e entendemos suas necessidades, capacidades e objetivos.  </p>
+                    </div>
+                    <div class="circle">
+                        1
+                    </div>
+            </div>
+
+                <div class="card-control">
+                    <div class="como-funciona-card card-2" >
+                        <h3>Análise do Edital </h3>
+                        <p>Utilizamos sistemas avançados e análise manual para monitorar diariamente oportunidades em todo o Brasil. Buscamos editais compatíveis com o seu perfil,</p>
+                    </div>
+                    <div class="circle">
+                        2
+                    </div>
+            </div>   
+
+                <div class="card-control">
+                    <div class="como-funciona-card card-3">
+                        <h3>Montagem e Envio</h3>
+                        <p>Com o edital aprovado, cuidamos de toda a parte técnica e documental</p>
+                    </div>
+                    <div class="circle">
+                        3
+                    </div>
+                        </div>   
+
+                        </div>
+                    </div>  <!-- fim slider -->
+                        <div class="swiper-slide">
+                                       <div class="como-funciona-contente">
+                    <div class="card-control">
+                    <div class="como-funciona-card card-1">
+                        <h3>Cadastro e Entendimento</h3>
+                        <p>Nesta etapa inicial, realizamos o cadastro completo da sua empresa e entendemos suas necessidades, capacidades e objetivos.  </p>
+                    </div>
+                    <div class="circle">
+                        3
+                    </div>
+            </div>
+
+                <div class="card-control">
+                    <div class="como-funciona-card card-2" >
+                        <h3>Análise do Edital </h3>
+                        <p>Utilizamos sistemas avançados e análise manual para monitorar diariamente oportunidades em todo o Brasil. Buscamos editais compatíveis com o seu perfil,</p>
+                    </div>
+                    <div class="circle">
+                        4
+                    </div>
+            </div>   
+
+                <div class="card-control">
+                    <div class="como-funciona-card card-3">
+                        <h3>Montagem e Envio</h3>
+                        <p>Com o edital aprovado, cuidamos de toda a parte técnica e documental</p>
+                    </div>
+                    <div class="circle">
+                        5
+                    </div>
+                        </div>   
+
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            <!-- <div class="como-funciona-contente">
                   <div class="card-control">
-                <div class="como-funciona-card">
+                <div class="como-funciona-card card-1">
                     <h3>Cadastro e Entendimento</h3>
                     <p>Nesta etapa inicial, realizamos o cadastro completo da sua empresa e entendemos suas necessidades, capacidades e objetivos.  </p>
                 </div>
@@ -168,7 +245,7 @@
            </div>
 
             <div class="card-control">
-                <div class="como-funciona-card">
+                <div class="como-funciona-card card-2" >
                     <h3>Análise do Edital </h3>
                     <p>Utilizamos sistemas avançados e análise manual para monitorar diariamente oportunidades em todo o Brasil. Buscamos editais compatíveis com o seu perfil,</p>
                 </div>
@@ -178,7 +255,7 @@
            </div>   
 
             <div class="card-control">
-                <div class="como-funciona-card">
+                <div class="como-funciona-card card-3">
                     <h3>Montagem e Envio</h3>
                     <p>Com o edital aprovado, cuidamos de toda a parte técnica e documental</p>
                 </div>
@@ -187,7 +264,7 @@
                 </div>
            </div> 
 
-            </div>
+    </div> -->
         </section>
 
         <!-- contato -->
@@ -200,24 +277,24 @@
                 <h1 class="titulocontato">Fale com a gente</h1>
 
                 <label>Nome</label>
-                <input type="text" class=" imputNome input-form " id="nome">
+                <input type="text" class=" imputNome input-form " id="nome" placeholder="Seu nome">
 
                 <div class="emailContato">
 
                     <div class="input-control">
                         <label>E-mail</label>
-                        <input type="email" class=" imputemail input-form" id="email">
+                        <input type="email" class=" imputemail input-form" id="email" placeholder="Seu email">
                     </div>
 
                     <div class="input-control">
                         <label>Telefone</label>
-                        <input type="number" class=" imputnumber input-form" id="telefone"> 
+                        <input type="number" class=" imputnumber input-form" id="telefone" placeholder="Telefone"> 
                     </div>
 
                 </div>
 
                 <label>Assunto</label>
-                <textarea name="Assunto" id="" rows="10" cols="60" class=" imputtextarea" id="mensagem"></textarea>
+                <textarea name="Assunto" id="" rows="10" cols="60" class="input-textarea" id="mensagem" placeholder=""></textarea>
 
                 <button class="buutonForm">Enviar</button>
             </form>
@@ -241,11 +318,6 @@
 
         </div>
 
-        <!-- linha -->
-        <div class="linha">
-            <hr>
-        </div>
-
         <!-- links do footer -->
         <div class="footerLinksContatos">
 
@@ -254,9 +326,9 @@
             <ul class="footerLinksuteis">
                 <h3>Links Úteis</h3>
 
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Nossos Serviços</a></li>
-                <li><a href="">Depoimentos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Nossos Serviços</a></li>
+                <li><a href="#">Depoimentos</a></li>
 
             </ul>
 
@@ -279,6 +351,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/animacoes.js"></script>
 </body>
