@@ -7,7 +7,7 @@ contatoform.addEventListener("submit" , (e) => {
     const name =  document.querySelector("#nome").value
     const email =  document.querySelector("#email").value
     const phone =  document.querySelector("#telefone").value
-    const subject =  document.querySelector(".imputtextarea").value
+    const subject =  document.querySelector(".input-textarea").value
 
     console.log(name)
     console.log(email)
@@ -58,6 +58,10 @@ buttonMoreServices.addEventListener("click" , () => {
     spaceBetween: 30,
     loop: true,
     speed: 800,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
 
     pagination: {
       el: ".swiper-pagination",
