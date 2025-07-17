@@ -216,6 +216,7 @@ body{
 .cardes {
     display: flex;
     flex: 1 ;
+    
     height: 300px;
     background: #fff;
     flex-direction: column;
