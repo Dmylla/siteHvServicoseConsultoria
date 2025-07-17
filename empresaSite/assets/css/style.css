@@ -209,14 +209,14 @@ body{
     gap: 85px;
     background-color: #335675;
     width: 100%;
-    height: 817px;
+    height: 880px;
     margin-top: 110px;
 }
 
 .cardes {
     display: flex;
     flex: 1 ;
-    height: 200px;
+    height: 300px;
     background: #fff;
     flex-direction: column;
     justify-content: space-around;

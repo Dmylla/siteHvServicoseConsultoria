@@ -22,7 +22,7 @@ contatoform.addEventListener("submit" , (e) => {
      Email:${email}
      Assunto:${subject}
     `
-    const url = `https://wa.me/559896028439?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/55989924318?text=${encodeURIComponent(text)}`;
 
     window.open(url)
 })
