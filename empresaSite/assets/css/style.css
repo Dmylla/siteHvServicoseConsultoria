@@ -16,7 +16,9 @@ html{
 body{
     overflow-x: hidden;
 }
-
+.logo{
+    width: 30px;
+}
 /* container do navbar */
 .containerNavbar{
     display: flex;
