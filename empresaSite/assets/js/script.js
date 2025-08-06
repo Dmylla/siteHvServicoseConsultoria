@@ -52,26 +52,26 @@ buttonMoreServices.addEventListener("click" , () => {
 
 // slider
 
- document.addEventListener("DOMContentLoaded", () => {
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    speed: 800,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+//  document.addEventListener("DOMContentLoaded", () => {
+//   const swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     speed: 800,
+//     autoplay: {
+//       delay: 4000,
+//       disableOnInteraction: false,
+//     },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true
+//     },
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
-});
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev"
+//     }
+//   });
+// });
 
